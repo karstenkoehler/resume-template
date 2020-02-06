@@ -1,15 +1,15 @@
 <template>
     <div id="app">
         <v-app>
-            <resume-header :infos="header_infos"></resume-header>
+            <resume-header :infos="header_infos"/>
 
             <div id="page">
                 <div id="sidebar" class="elevation-4">
-                    <resume-objective :objective="objective"></resume-objective>
-                    <v-spacer style="min-height: 175px;"></v-spacer>
-                    <resume-skills :skills="skills"></resume-skills>
-                    <v-spacer style="min-height: 175px;"></v-spacer>
-                    <resume-contact :contact_details="contact_details" :github="github"></resume-contact>
+                    <resume-objective :objective="objective"/>
+                    <v-spacer style="min-height: 175px;"/>
+                    <resume-skills :skills="skills"/>
+                    <v-spacer style="min-height: 175px;"/>
+                    <resume-contact :contact_details="contact_details" :github="github"/>
                 </div>
 
                 <div id="main-content">

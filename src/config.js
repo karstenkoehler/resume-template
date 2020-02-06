@@ -39,7 +39,6 @@ export function create_data() {
                 bullets: [
                     "Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
                     "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
-                    "Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
                 ]
             },
         ],

@@ -16,4 +16,8 @@
     #objective-container {
         margin: 16px 0;
     }
+
+    .v-card__text {
+        padding: 8px 16px;
+    }
 </style>

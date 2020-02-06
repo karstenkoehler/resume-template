@@ -7,11 +7,11 @@
             <template v-else><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Vue.js_Logo.svg"
                                   alt="project avatar"
                                   style="width: 35px;"></template>
-            <span class="title font-weight-light" style="margin: auto 0 auto 0"><slot></slot></span>
+            <span class="title font-weight-light" style="margin: auto 0 auto 0"><slot/></span>
 
         </v-card-title>
 
-        <v-divider></v-divider>
+        <v-divider/>
 
         <v-container fluid>
             <v-layout row wrap>
@@ -19,7 +19,7 @@
                     <v-toolbar-title style="text-align: left; padding: 0 16px;">{{item.position}}
                     </v-toolbar-title>
                     <v-subheader>{{item.location}}
-                        <v-spacer></v-spacer>
+                        <v-spacer/>
                         {{item.time_from}} - {{item.time_to}}
                     </v-subheader>
                     <ul>
@@ -27,7 +27,7 @@
                             {{bullet}}
                         </li>
                     </ul>
-                    <v-spacer v-if="index < items.length -1" style="height: 12px;"></v-spacer>
+                    <v-spacer v-if="index < items.length -1" style="height: 12px;"/>
                 </div>
             </v-layout>
         </v-container>
@@ -44,6 +44,7 @@
 <style scoped>
     ul {
         text-align: left;
+        margin-left: 8px;
     }
 
     .v-card {
@@ -51,7 +52,7 @@
     }
 
     .v-card__title {
-        padding: 13px 16px;
+        padding: 8px 16px;
     }
 
     .container {
@@ -60,5 +61,10 @@
 
     .v-subheader {
         letter-spacing: -1px;
+        margin-left: 4px;
+    }
+
+    .v-toolbar__title {
+        font-weight: bold;
     }
 </style>

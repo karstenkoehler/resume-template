@@ -3,10 +3,10 @@
         <v-subheader>Technical Skills</v-subheader>
 
         <v-list>
-            <v-list-tile v-for="skill in skills" :key="skill" style="max-height: 36px;">
-                <v-list-tile-title>{{skill.name}}</v-list-tile-title>
-                <v-progress-linear :value="skill.level"></v-progress-linear>
-            </v-list-tile>
+            <v-list-item v-for="skill in skills" :key="skill" style="max-height: 36px;">
+                <v-list-item-title>{{skill.name}}</v-list-item-title>
+                <v-progress-linear :value="skill.level"/>
+            </v-list-item>
         </v-list>
     </div>
 </template>
@@ -19,7 +19,12 @@
 </script>
 
 <style scoped>
-    .v-list__tile {
+    .v-list__item {
         height: 12px;
+    }
+
+    .v-list-item {
+        text-align: left;
+        min-height: 34px;
     }
 </style>
