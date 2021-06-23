@@ -8,7 +8,8 @@ See the PDF version of the sample resume [here](sample-resume.pdf).
 ## Get it for yourself
 You need to have [NodeJS](https://nodejs.org/en/) running on your machine.
 ```
-git clone
+git clone https://github.com/SchiffFlieger/resume-template.git
+cd resume-template
 npm install
 npm run serve
 ```
